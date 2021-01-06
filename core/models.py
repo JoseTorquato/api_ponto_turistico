@@ -4,6 +4,7 @@ from avaliacoes.models import Avaliacao
 from comentarios.models import Comentario
 from localizacao.models import Localizacao
 
+
 class PontoTuristico(models.Model):
     nome = models.CharField(max_length=150)
     descricao = models.TextField()
