@@ -12,7 +12,8 @@ class PontoTuristico(models.Model):
     atracoes = models.ManyToManyField(Atracao)
     avaliacao = models.ManyToManyField(Avaliacao)
     comentarios = models.ManyToManyField(Comentario)
-    localizacao = models.ForeignKey(Localizacao, on_delete=models.CASCADE)
+    localizacao = models.ForeignKey(
+        Localizacao, on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self):
         return self.nome
