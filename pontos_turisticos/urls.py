@@ -23,9 +23,9 @@ from avaliacoes.api.viewsets import AvaliacoesViewSet
 from comentarios.api.viewsets import ComentariosViewSet
 from localizacao.api.viewsets import LocalizacaoViewSet
 
-
+# Routers for APi's
 router = routers.DefaultRouter()
-router.register(r'pontoturistico', PontoTuristicoViewSet)
+router.register(r'pontosturisticos', PontoTuristicoViewSet, basename='PontoTuristico')
 router.register(r'atracoes', AtracoesViewSet)
 router.register(r'avaliacoes', AvaliacoesViewSet)
 router.register(r'comentarios', ComentariosViewSet)
